@@ -163,3 +163,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sensors.pug=false \
     ro.qti.sensors.iod=false \
     ro.qfusion_use_report_period=false
+
+# aptX HD
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.bt.enableAptXHD=true
