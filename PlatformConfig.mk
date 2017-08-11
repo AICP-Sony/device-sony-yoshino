@@ -97,4 +97,7 @@ CAMERA_DAEMON_NOT_PRESENT := true
 # FPC version select
 TARGET_FPC_VERSION := N
 
+BOARD_USES_CYANOGEN_HARDWARE := true
+BOARD_HARDWARE_CLASS += $(PLATFORM_COMMON_PATH)/cmhw
+
 include device/sony/common/CommonConfig.mk
