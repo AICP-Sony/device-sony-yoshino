@@ -170,7 +170,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Assertive Display
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/ad_calib.cfg:system/etc/ad_calib.cfg
+    $(SONY_ROOT)/system/etc/ad_calib.cfg:system/etc/ad_calib.cfg
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qcom.ad=1 \
