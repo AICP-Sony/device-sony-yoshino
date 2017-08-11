@@ -167,3 +167,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # aptX HD
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.bt.enableAptXHD=true
+
+# Assertive Display
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/ad_calib.cfg:system/etc/ad_calib.cfg
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.qcom.ad=1 \
+    ro.qcom.ad.calib.data=/system/etc/ad_calib.cfg \
+    ro.qcom.ad.sensortype=2
