@@ -172,6 +172,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/ad_calib.cfg:system/etc/ad_calib.cfg
 
+# Wi-Fi
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.interface=wlan0
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qcom.ad=1 \
     ro.qcom.ad.calib.data=/system/etc/ad_calib.cfg \
