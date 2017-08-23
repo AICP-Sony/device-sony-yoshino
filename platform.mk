@@ -180,3 +180,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qcom.ad=1 \
     ro.qcom.ad.calib.data=/system/etc/ad_calib.cfg \
     ro.qcom.ad.sensortype=2
+
+# USB controller setup
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.usb.controller=a800000.dwc3
